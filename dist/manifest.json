@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "NameIt",
+    "version": "1.0.0",
+    "description": "Automatically rename downloaded files based on customizable patterns",
+    "permissions": ["downloads", "storage", "notifications"],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "assets/icon16.jpeg",
+            "32": "assets/icon32.jpeg",
+            "48": "assets/icon48.jpeg",
+            "128": "assets/icon128.jpeg"
+        }
+    },
+    "options_page": "options/options.html",
+    "icons": {
+        "16": "assets/icon16.jpeg",
+        "32": "assets/icon32.jpeg",
+        "48": "assets/icon48.jpeg",
+        "128": "assets/icon128.jpeg"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
