@@ -1,3 +1,5 @@
+![NameIt](nameit.png)
+
 # NameIt - Chrome Extension
 
 A Chrome extension that automatically renames downloaded files based on customizable patterns.
